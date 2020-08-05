@@ -22,6 +22,7 @@
     "autoprefixer": "^9.6.1",
     "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
+    "gulp-image": "^6.2.1",
     "gulp-plumber": "^1.2.1",
     "gulp-postcss": "^8.0.0",
     "gulp-rename": "^1.4.0",
