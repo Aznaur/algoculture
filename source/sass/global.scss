@@ -1,3 +1,17 @@
 body {
+  min-width: 320px;
   font-size: 16px;
+  background-color: #32373a;
+  background-image: url('../img/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  font-family: "Source Sans", "Arial", sans-serif;
+  color: #ffffff;
 }
+
+img {
+  width: 100%;
+  height: auto;
+}
+

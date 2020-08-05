@@ -1,0 +1,58 @@
+.technical-page {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+  &__deck {
+    margin-top: 7.7%;
+    max-height: 400px;
+    text-align: center;
+
+    & p:first-of-type {
+      font-size: 72px;
+      font-weight: 200;
+      margin: 0;
+      margin-bottom: 20px;
+      padding: 0;
+    }
+
+    & p:last-of-type {
+      font-size: 24px;
+      font-weight: 300;
+      margin: 0;
+      padding: 0;
+    }
+
+    & a {
+      display: block;
+    }
+
+    & img {
+      width: 151px;
+      height: 197px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+
+@media (max-width: 767px) {
+  .technical-page__deck {
+    margin-top: 38.7%;
+
+    & p:first-of-type {
+      font-size: 30px;
+    }
+
+    & p:last-of-type {
+      font-size: 18px;
+    }
+
+    & img {
+      width: 80px;
+      height: 105px;
+      margin-bottom: 40px;
+    }
+  }
+}
