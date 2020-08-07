@@ -5,7 +5,7 @@
   justify-content: center;
 
   &__deck {
-    margin-top: 7.7%;
+    margin: auto;
     max-height: 400px;
     text-align: center;
 
@@ -26,12 +26,12 @@
 
     & a {
       display: block;
+      margin-bottom: 40px;
     }
 
     & img {
       width: 151px;
       height: 197px;
-      margin-bottom: 40px;
     }
   }
 }
@@ -39,8 +39,6 @@
 
 @media (max-width: 767px) {
   .technical-page__deck {
-    margin-top: 38.7%;
-
     & p:first-of-type {
       font-size: 30px;
     }
@@ -52,7 +50,17 @@
     & img {
       width: 80px;
       height: 105px;
-      margin-bottom: 40px;
+    }
+
+    & a {
+      margin-bottom: 20px;
     }
   }
 }
+
+
+// @media (orientation: landscape) {
+//   .technical-page__deck {
+//     margin: auto;
+//   }
+// }

@@ -6,8 +6,10 @@ body {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+  backdrop-filter: brightness(70%);
   font-family: "Source Sans", "Arial", sans-serif;
   color: #ffffff;
+
 }
 
 img {
