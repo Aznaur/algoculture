@@ -1,0 +1,27 @@
+.page-header {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 27px;
+  padding-bottom: 27px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header__logo {
+  width: 55px;
+
+  & img {
+    display: block;
+    margin-right: 10px;
+  }
+
+  & a {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    text-decoration: none;
+    color: #ffffff;
+    line-height: normal;
+  }
+}
