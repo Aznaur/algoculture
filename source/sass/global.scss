@@ -1,19 +1,22 @@
+html {
+  height: 100%;
+}
+
 body {
   min-width: 320px;
+  height: 100%;
   font-size: 16px;
   background-color: #32373a;
-  background-image: url('../img/bg.jpg');
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  backdrop-filter: brightness(70%);
   font-family: "Source Sans", "Arial", sans-serif;
   color: #ffffff;
-
 }
 
 img {
   width: 100%;
   height: auto;
+}
+
+p {
+  margin: 0;
 }
 

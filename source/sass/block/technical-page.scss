@@ -1,11 +1,15 @@
 .technical-page {
   width: 100%;
-  height: 100vh;
+  min-height: 100%;
   display: flex;
   justify-content: center;
+  background-image: url('../img/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
 
   &__deck {
-    margin: auto;
+    margin-top: 7.7%;
     max-height: 400px;
     text-align: center;
 
@@ -58,9 +62,14 @@
   }
 }
 
+@media (max-width: 767px) {
+  .technical-page__deck {
+    margin-top: 38.7%;
+  }
+}
 
-// @media (orientation: landscape) {
-//   .technical-page__deck {
-//     margin: auto;
-//   }
-// }
+@media (orientation: landscape) {
+  .technical-page__deck {
+    margin: auto;
+  }
+}
