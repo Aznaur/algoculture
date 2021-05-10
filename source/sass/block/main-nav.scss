@@ -1,0 +1,19 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+}
+
+.main-nav__toggle {
+  background-color: transparent;
+  border: none;
+  font-size: 0px;
+  cursor: pointer;
+  width: 35px;
+}
