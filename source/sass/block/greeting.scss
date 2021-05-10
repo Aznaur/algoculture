@@ -8,4 +8,16 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  text-align: center;
+}
+
+.greeting__text {
+  & p:first-of-type {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+
+  & p:last-of-type {
+    font-size: 20px;
+  }
 }
