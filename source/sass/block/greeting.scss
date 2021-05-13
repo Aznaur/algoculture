@@ -1,10 +1,12 @@
 .greeting {
+  position: relative;
   width: 100%;
   min-height: 100vh;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-image: url("../img/background.jpg");
+  background-image: url("../img/IMAGE.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -13,11 +15,44 @@
 
 .greeting__text {
   & p:first-of-type {
-    font-size: 50px;
+    font-size: 100px;
+    font-weight: 200;
     margin-bottom: 20px;
+    letter-spacing: 7.2px;
   }
 
   & p:last-of-type {
-    font-size: 20px;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1.2px;
+  }
+}
+
+.greeting__scroll {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 30px;
+  width: 36px;
+  height: 36px;
+  animation: animalLogo;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  // border-radius: 30px;
+  // background-color: #239f5b;
+
+  & svg {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+  }
+}
+
+@keyframes animalLogo {
+  to {
+    transform: translateY(10px);
   }
 }

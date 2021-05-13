@@ -11,6 +11,11 @@
     <header class="page-header">
       <div class="container">
         <div class="page-header__wrapp header">
+          <div class="header__logo">
+            <a href="#">
+              <img src="img/logo.png" alt="Логотип копмании">
+            </a>
+          </div>
           <nav class="header__menu main-nav">
             <button class="main-nav__toggle">Открыть
               <svg viewBox="0 0 36 32" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -18,38 +23,40 @@
               </svg>
             </button>
             <ul class="main-nav__list">
-              <li class="main-nav__item">О компании</li>
-              <li class="main-nav__item">Услуги</li>
-              <li class="main-nav__item">Продукция</li>
-              <li class="main-nav__item">Технологии</li>
-              <li class="main-nav__item">Новости</li>
-              <li class="main-nav__item">Контакты</li>
+              <li class="main-nav__item"><a href="#">О компании</a></li>
+              <li class="main-nav__item"><a href="#">Услуги</a></li>
+              <li class="main-nav__item"><a href="#">Продукция</a></li>
+              <li class="main-nav__item"><a href="#">Технологии</a></li>
+              <li class="main-nav__item"><a href="#">Новости</a></li>
+              <li class="main-nav__item"><a href="#">Контакты</a></li>
             </ul>
           </nav>
-          <div class="header__logo">
-            <a href="#">
-              <img src="img/logo.png" alt="Логотип копмании"> Альгокультура
-            </a>
-          </div>
-          <div class="header__contact">
+          <!-- <div class="header__contact">
             <a href="mailto:#">qwerty@gmail.com</a>
             <a href="tel:#">+78009007060</a>
-          </div>
+          </div> -->
         </div>
       </div>
     </header>
 
     <main>
       <div class="greeting">
-        <div class="container">
-          <div class="greeting__text">
-            <p>Альгокультура</p>
-            <p>Технология управляемой вегетации растений</p>
-          </div>
+        <div class="greeting__text">
+          <p>Альгокультура</p>
+          <p>Технология управляемой вегетации растений</p>
         </div>
+        <div class="greeting__scroll">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#ffffff">
+            <path d="M12 2c3.309 0 6 2.691 6 6v8c0 3.309-2.691 6-6 6s-6-2.691-6-6v-8c0-3.309 2.691-6 6-6zm0-2c-4.418 0-8 3.582-8 8v8c0 4.418 3.582 8 8 8s8-3.582 8-8v-8c0-4.418-3.582-8-8-8zm0 9c-.829 0-1.5-.672-1.5-1.5s.671-1.5 1.5-1.5 1.5.672 1.5 1.5-.671 1.5-1.5 1.5z"/>
+          </svg>
+        </div>
+      </div>
+      <div class="about">
+        <h1>Привет</h1>
       </div>
     </main>
 
     <footer class="page-footer"></footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
