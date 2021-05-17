@@ -7,19 +7,16 @@
   z-index: 1000;
 }
 
-.header__logo {
-  width: 40px;
 
-  & img {
-    display: block;
+@media (max-width: 1023px) {
+  .page-header {
+    padding-top: 15px;
   }
 
-  & a {
-    display: flex;
-    align-items: center;
-    font-size: 25px;
-    text-decoration: none;
-    color: #ffffff;
-    line-height: normal;
+  .page-header--menu {
+    min-height: 100vh;
+    background-color: rgba(0,0,0, 0.9);
+    box-sizing: border-box;
+    overflow: scroll;
   }
 }
