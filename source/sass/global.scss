@@ -54,3 +54,9 @@ p {
   bottom: 30px;
 
 }
+
+@media (orientation: landscape) {
+  body {
+    overflow-y: scroll !important;
+  }
+}
