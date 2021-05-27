@@ -87,6 +87,18 @@
   }
 }
 
+@media (max-width: 767px) {
+  .about-company__text {
+    & h2 {
+      font-size: 30px;
+    }
+
+    & p {
+      font-size: 16px;
+    }
+  }
+}
+
 @media (max-width: 424px) {
   .about-company__image {
     width: 100%;
