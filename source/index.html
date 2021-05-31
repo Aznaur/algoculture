@@ -18,16 +18,14 @@
           </div>
           <nav class="header__menu main-nav">
             <button class="main-nav__toggle">Открыть
-              <!-- <svg width="30" height="30" viewBox="0 0 36 32" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0h36v4H0V0zm0 14h24v4H0v-4zm0 14h36v4H0v-4z"/>
-              </svg> -->
             </button>
-            <ul class="main-nav__list">
-              <li class="main-nav__item"><a href="#">О компании</a></li>
-              <li class="main-nav__item"><a href="#">Услуги и Продукция</a></li>
-              <li class="main-nav__item"><a href="#">Технологии</a></li>
-              <li class="main-nav__item"><a href="#">Новости</a></li>
-              <li class="main-nav__item"><a href="#">Контакты</a></li>
+            <ul class="main-nav__list page-list">
+              <li class="main-nav__item"><a href="#" id="0">Главная</a></li>
+              <li class="main-nav__item"><a href="#" id="1">О компании</a></li>
+              <li class="main-nav__item"><a href="#" id="2">Услуги и Продукция</a></li>
+              <li class="main-nav__item"><a href="#" id="3">Технологии</a></li>
+              <li class="main-nav__item"><a href="#" id="4">Новости</a></li>
+              <li class="main-nav__item"><a href="#" id="5">Контакты</a></li>
               <li class="main-nav__social social">
                 <ul class="social__list">
                   <li>
@@ -48,17 +46,13 @@
               </li>
             </ul>
           </nav>
-          <!-- <div class="header__contact">
-            <a href="mailto:#">qwerty@gmail.com</a>
-            <a href="tel:#">+78009007060</a>
-          </div> -->
         </div>
       </div>
     </header>
 
     <main>
       <h1 class="visually-hidden">Молодая биотехнологическая компания</h1>
-      <div class="greeting">
+      <section data-id="0" class="greeting">
         <div class="greeting__text">
           <p class="anim-items anim-none">Альгокультура</p>
           <p class="anim-items anim-none">Технология управляемой вегетации растений</p>
@@ -68,14 +62,14 @@
             <path d="M12 2c3.309 0 6 2.691 6 6v8c0 3.309-2.691 6-6 6s-6-2.691-6-6v-8c0-3.309 2.691-6 6-6zm0-2c-4.418 0-8 3.582-8 8v8c0 4.418 3.582 8 8 8s8-3.582 8-8v-8c0-4.418-3.582-8-8-8zm0 9c-.829 0-1.5-.672-1.5-1.5s.671-1.5 1.5-1.5 1.5.672 1.5 1.5-.671 1.5-1.5 1.5z"/>
           </svg>
         </div>
-      </div>
-      <section class="about-company">
+      </section>
+      <section data-id="1" class="about-company">
         <div class="about-company__wrapp">
-          <div class="about-company__image">
+          <div class="about-company__image anim-items anim-none">
             <img src="img/IMG_1.jpg" alt="Фото растения">
             <img src="img/IMG_2.jpg" alt="Фото клубня">
           </div>
-          <div class="about-company__text">
+          <div class="about-company__text anim-items anim-none">
             <h2>О компании</h2>
             <p>Общество с ограниченной ответственностью «Альгокультура» было создано в декабре 2016г. В апреле 2017г. Обществу был присвоен статус резидента инновационного центра «Сколково».</p>
             <p>С 2017г. по 2020г. ООО «Альгокультура» осуществляла исследовательскую деятельность и коммерциализацию ее результатов в соответствии с Федеральным законом от 28.09.2010 № 244-ФЗ «Об инновационном центре «Сколково» в области биотехнологий в растениеводстве.</p>
@@ -88,11 +82,11 @@
           </video>
         </div>
       </section>
-      <section class="services">
+      <section data-id="2" class="services">
         <div class="services__wrapp">
-          <h2 class="services__title">Наши услуги и продукция</h2>
+          <h2 class="services__title anim-items anim-none">Наши услуги и продукция</h2>
           <ul class="services__list">
-            <li class="services__item">
+            <li class="services__item anim-items anim-none">
               <div class="services__svg services__svg--green">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 744 744">
                   <path d="M414.22 328.13h10.56a21.11 21.11 0 000-42.22h-42.22v-42.22h10.56c40.74 0 73.89-33.85 73.89-74.59V148a10.55 10.55 0 00-10.56-10.56h-21.12A73.66 73.66 0 00372 173.87a73.66 73.66 0 00-63.33-36.44h-21.11A10.55 10.55 0 00277 148v21.1c0 40.74 33.15 74.59 73.89 74.59h10.56v42.22h-42.23a21.11 21.11 0 000 42.22h10.56v236.22a42.22 42.22 0 0084.44 0z"/>
@@ -102,7 +96,7 @@
               <p>Проведение научных исследований и разработок в области растениеводства и сити-фермерства.</p>
             </li>
 
-            <li class="services__item">
+            <li class="services__item anim-items anim-none">
               <div class="services__svg services__svg--beige">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 744 744">
                   <defs>
@@ -122,48 +116,48 @@
           </ul>
         </div>
       </section>
-      <section class="technologies">
+      <section data-id="3" class="technologies">
         <h2 class="visually-hidden">Деятельность компании</h2>
         <ul class="technologies__list">
           <li class="technologies__item">
-            <div class="technologies__img">
+            <div class="technologies__img anim-items anim-none">
               <img src="img/t_1.jpg" alt="Фото технологии">
             </div>
 
-            <div class="technologies__text">
+            <div class="technologies__text anim-items anim-none">
               <h3 class="technologies__headline">Технология получения оздоровленных микрорастений различных культур</h3>
               <p class="technologies__subtitle">Работа проводится в фитотронах с возможностью управления микроклиматом и спектральными характеристиками светодиодного освещения, что позволяет реализовать множество различных исследовательских вариантов для определения оптимального режима выращивания микрорастений и их адаптации</p>
             </div>
           </li>
 
           <li class="technologies__item">
-            <div class="technologies__img">
+            <div class="technologies__img anim-items anim-none">
               <img src="img/t_2.jpg" alt="Фото технологии">
             </div>
 
-            <div class="technologies__text">
+            <div class="technologies__text anim-items anim-none">
               <h3 class="technologies__headline">Технология производства оздоровленного посевного материала картофеля</h3>
               <p class="technologies__subtitle">Технология осуществляется в контролируемых условиях вертикальной фермы с возможностью управления микроклиматом и спектральными характеристиками светодиодного освещения, что позволяет реализовать множество различных исследовательских вариантов для определения оптимального режима выращивания растений и их адаптации</p>
             </div>
           </li>
 
           <li class="technologies__item">
-            <div class="technologies__img">
+            <div class="technologies__img anim-items anim-none">
               <img src="img/t_3.jpg" alt="Фото технологии">
             </div>
 
-            <div class="technologies__text">
+            <div class="technologies__text anim-items anim-none">
               <h3 class="technologies__headline">Технология выращивания зеленных культур </h3>
               <p class="technologies__subtitle">Технология осуществляется в в закрытом грунте в контролируемых условиях вертикальной фермы с управляемым светодиодным LED-освещением. Сити-фермерство</p>
             </div>
           </li>
 
           <li class="technologies__item">
-            <div class="technologies__img">
+            <div class="technologies__img anim-items anim-none">
               <img src="img/t_4.jpg" alt="Фото технологии">
             </div>
 
-            <div class="technologies__text">
+            <div class="technologies__text anim-items anim-none">
               <h3 class="technologies__headline">Технология выращивания эфиромасличных культур </h3>
               <p class="technologies__subtitle">Раскрытия природного потенциала сортов, увеличения биомассы и эфирного масла в контролируемых условиях вертикальной фермы с управляемым светодиодным LED-освещением. Отработка технологии ускоренного получения саженцев эфиромасличных культур для дальнейшего выращивания в полях в качестве сырья для получения эфирного масла</p>
             </div>
@@ -199,7 +193,7 @@
           </div>
         </div>
       </section>
-      <section class="news">
+      <section data-id="4" class="news">
         <div class="news__wrapp">
           <h2 class="news__title-section">Новости</h2>
           <ul class="news__list">
@@ -238,7 +232,44 @@
       </section>
     </main>
 
-    <footer class="page-footer"></footer>
+    <footer data-id="5" class="page-footer">
+      <div class="page-footer__wrapp">
+        <div class="page-footer__top">
+          <div class="page-footer__logo">
+            <a href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="200" height="72" viewBox="0 0 256.68 92.08">
+                <path d="M10 27.56A20.07 20.07 0 002.69 55l6.55 11.31 22-38A20.05 20.05 0 0010 27.56m34.18 19.01L37.45 34.9a20 20 0 00-1.89-2.72l-8.35 14.39zM36.5 82.83a10.28 10.28 0 01-1.17-.07A10.5 10.5 0 0126 71.82v-.69a10.52 10.52 0 0118.3-5.84l-3.66 3.27a5.62 5.62 0 00-9.77 3.12v.14a5.6 5.6 0 005 6.08 5.65 5.65 0 004.84-1.9l3.66 3.26a10.55 10.55 0 01-7.87 3.53m22.33-11L47.35 51.94H24.18L12.6 72l8.2 14.22L22.41 89l1.77 3.07h23.17l10.22-17.7L58.94 72zm8.99-36.51L47.52 0s-3.42 6-6.39 11.1-2.74 13.9.53 19.59L62 66s3.42-6 6.39-11.1 2.73-13.92-.54-19.58m34.76 29.92l-2-5.89c-.37-1.24-.87-3.41-.87-3.41h-.06s-.5 2.17-.87 3.41l-2 5.89zm-5-13.12h4.22l7.72 22h-4.05l-1.89-5.64h-7.72L94 74.14h-4.07zm13.71 0h3.91v16.5c0 1.74.59 2.17 1.61 2.17a4.16 4.16 0 00.59 0v3.41a10 10 0 01-1.24.09c-2.17 0-4.87-.56-4.87-5.09zm15.6 18.39c1.86 0 3.66-1.09 3.66-4.65s-1.8-4.56-3.91-4.56c-2.39 0-3.72 1.74-3.72 4.4s1.39 4.81 4 4.81M126 77.3c2.42 0 4.46-1 4.46-3.84v-1a7.62 7.62 0 01.06-.84h-.06a4.92 4.92 0 01-4.43 2.2c-4.53 0-7.07-3.66-7.07-8S121.4 58 126 58a5.76 5.76 0 014.67 2h.09a1.52 1.52 0 01-.06-.43v-1.25h3.72v14.86c0 5.43-4.22 7.47-8.34 7.47a12.83 12.83 0 01-5.64-1.37l1.21-3a10.19 10.19 0 004.37 1m20.52-6.12a4.94 4.94 0 10-4.68-4.93 4.71 4.71 0 004.68 4.93m0-13.21c4.84 0 8.71 3.44 8.71 8.28s-3.88 8.28-8.68 8.28-8.68-3.41-8.68-8.28 3.84-8.23 8.62-8.23m19.16 0a8.4 8.4 0 016.08 2.36L170 63a6 6 0 00-4.09-1.71 4.7 4.7 0 00-4.81 4.9 4.8 4.8 0 004.93 5 7.07 7.07 0 004.65-2l1.52 2.79a9.13 9.13 0 01-6.51 2.58c-5.24 0-8.59-3.69-8.59-8.28a8.18 8.18 0 018.57-8.28m8.77.32h3.94v9.36c0 1.92.5 3.22 2.45 3.22 2.85 0 4.43-2.51 4.43-5.33v-7.25h3.91v15.82h-3.78v-1.86a6.59 6.59 0 01.09-1.09h-.06a6.14 6.14 0 01-5.49 3.32c-3.41 0-5.49-1.71-5.49-6zm18.56-6.2h3.91v16.5c0 1.74.59 2.17 1.61 2.17a4.16 4.16 0 00.59 0v3.41a10 10 0 01-1.24.09c-2.17 0-4.87-.56-4.87-5.09zm9.27 9.55h-2v-3.13h2.14V54h3.85v4.53h3.6v3.13h-3.6v6.17a2.81 2.81 0 003.13 3 3.15 3.15 0 00.71-.06v3.43a9.87 9.87 0 01-1.21.09c-2.2 0-6.57-.65-6.57-6zm10.2-3.35h3.94v9.36c0 1.92.5 3.22 2.45 3.22 2.85 0 4.43-2.51 4.43-5.33v-7.25h3.91v15.82h-3.78v-1.86a6.59 6.59 0 01.09-1.09h-.06a6.14 6.14 0 01-5.45 3.32c-3.41 0-5.49-1.71-5.49-6zm18.53 0h3.78v2.79a9.94 9.94 0 01-.06 1.08h.06a5.54 5.54 0 015-4.09 5.84 5.84 0 01.74.06V62a6.88 6.88 0 00-1-.06c-3.23 0-4.65 2.79-4.65 5.77v6.39H231zm21.74 5.96a3.11 3.11 0 00-3.16-3.35 3.79 3.79 0 00-3.81 3.35zM249.67 58c4.53 0 7 3.32 7 7.5a12.54 12.54 0 01-.12 1.52h-10.88a4.48 4.48 0 004.74 4.19 7.48 7.48 0 004.53-1.74l1.55 2.82a10 10 0 01-6.36 2.26 8.13 8.13 0 01-8.53-8.28c0-4.87 3.32-8.28 8.06-8.28" fill="#fff"/>
+              </svg>
+            </a>
+          </div>
+
+          <div class="page-footer__contact page-footer--padding">
+            <a href="https://yandex.ru/maps/-/CCUaiLcv0A"><b>Адрес:</b> 119285, г. Москва, ул. Минская, д. 1Г</a>
+            <a href="mailto:algoculture.sk@gmail.com"><b>E-mail:</b> algoculture.sk@gmail.com</a>
+            <a href="tel:+7(962)9809883"><b>Тел:</b> +7(962)9809883</a>
+            <ul class="page-footer__social social-footer">
+              <li class="social-footer__item">
+                <a href="https://www.facebook.com/algoculture/">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.29 18.48">
+                    <path d="M2,3.57c0-.11,0-.36,0-.75a2.75,2.75,0,0,1,.43-1.2A3.42,3.42,0,0,1,3.75.5,5.1,5.1,0,0,1,6.24,0H9.29V3.33H7.05a.92.92,0,0,0-.61.25A.69.69,0,0,0,6.16,4V6.11H9.29c0,.41-.07.8-.11,1.18l-.12,1C9,8.64,9,9,8.91,9.25H6.14v9.24H2V9.25H0V6.11H2Zm0,0" fill="#fff"/>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-footer__item">
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 131.13 131.13">
+                    <path d="M105.78,0H25.34A25.37,25.37,0,0,0,0,25.34v80.45a25.37,25.37,0,0,0,25.34,25.34h80.45a25.36,25.36,0,0,0,25.34-25.34V25.34A25.37,25.37,0,0,0,105.78,0Zm8,14.66h2.87V36.42l-21.92.07-.07-21.76Zm-48.2,29c18.19,0,21.94,17.07,21.94,21.95a21.94,21.94,0,0,1-43.87,0c0-4.87,3.75-21.95,21.93-21.95Zm51.19,60.57a12.57,12.57,0,0,1-12.57,12.56H26.7A12.57,12.57,0,0,1,14.13,104.2V51H32.33a41.73,41.73,0,0,0-2.64,14.6,35.85,35.85,0,1,0,71.7,0A41.93,41.93,0,0,0,98.75,51h18V104.2Zm0,0" fill="#fff"/>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="page-footer__bottom">
+          <p>© 2016-2021. Все права защищены</p>
+        </div>
+      </div>
+    </footer>
     <button class="btnTop" type="button">
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 192.1 277.67">
         <path d="M96.25,0A10.67,10.67,0,0,0,85.58,10.67v256a10.67,10.67,0,0,0,21.33.65q0-.33,0-.65v-256A10.67,10.67,0,0,0,96.25,0Z" fill="#fff"/>

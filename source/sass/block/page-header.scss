@@ -7,6 +7,16 @@
   z-index: 1000;
 }
 
+.page-header--scroll {
+  position: fixed;
+  background-color: rgba(0,0,0,0.6);
+  padding-bottom: 20px;
+  padding-top: 20px;
+  // & > img {
+  //   filter: brightness(0) invert(1);
+  // }
+}
+
 
 @media (max-width: 1023px) {
   .page-header {

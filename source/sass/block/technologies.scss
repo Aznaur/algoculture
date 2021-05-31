@@ -5,13 +5,21 @@
   &:nth-of-type(2n) {
 
     & .technologies__img {
+      transform: translate(120%, 0px);
       order: 1;
+    }
+
+    & .technologies__text {
+      transform: translate(-120%, 0px);
     }
   }
 }
 
 .technologies__img {
   width: 50%;
+  transform: translate(-120%, 0px);
+  opacity: 0;
+  transition: all 0.8s ease 0s;
 
   & img {
     display: block;
@@ -26,6 +34,9 @@
   justify-content: center;
   align-items: center;
   padding: 30px;
+  transform: translate(120%, 0px);
+  transition: all 0.8s ease 0s;
+  transition-delay: 0.2s;
 }
 
 .technologies__headline {

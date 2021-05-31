@@ -1,6 +1,8 @@
-"use strict";
+'use strict';
+
 {
   let scroll = document.querySelector('.greeting__scroll');
+  let greeting = document.querySelector('.greeting');
   let about = document.querySelector('.about-company');
   let btn = document.querySelector('.btnTop');
   let navOpen = document.querySelector('.main-nav__toggle');
@@ -8,7 +10,15 @@
   let body = document.querySelector('body');
   let mainNav = document.querySelector('.main-nav__list');
   let socilaList = document.querySelector('.main-nav__social');
+  let sectionId = document.querySelectorAll('[data-id]');
 
+  mainNav.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    let target = evt.target;
+    sectionId[target.id].scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
 
   navOpen.addEventListener('click', function (evt) {
     evt.preventDefault();
@@ -30,13 +40,15 @@
   function scrollFunction() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
       btn.classList.add('btnActive');
+      header.classList.add('page-header--scroll');
     } else {
       btn.classList.remove('btnActive');
+      header.classList.remove('page-header--scroll');
     }
   }
 
   btn.addEventListener('click', function () {
-    header.scrollIntoView({
+    greeting.scrollIntoView({
       behavior: 'smooth'
     });
   });

@@ -9,6 +9,7 @@ body {
   background-color: #ffffff;
   font-family: "Source Sans", "Arial", sans-serif;
   color: #81868e;
+  overflow-x: hidden;
 }
 
 .body--scroll {
@@ -58,7 +59,11 @@ ul {
 .btnActive {
   opacity: 1;
   bottom: 30px;
+}
 
+.active {
+  transform: translate(0px, 0px) !important;
+  opacity: 1 !important;
 }
 
 @media (orientation: landscape) {
