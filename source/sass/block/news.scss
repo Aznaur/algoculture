@@ -25,12 +25,10 @@
   display: flex;
 
   &:hover {
-
     & .news__img {
       box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.63);
     }
   }
-
 
   & a {
     display: flex;

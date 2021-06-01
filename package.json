@@ -1,8 +1,29 @@
 {
-  "name": "swedish-bitter",
+  "name": "algoculture",
   "version": "1.0.0",
-  "description": "Template healing balm",
-  "main": "index.js",
+  "description": "",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "1.x",
+    "autoprefixer": "^9.8.6",
+    "browser-sync": "2.26.x",
+    "eslint": "^7.12.1",
+    "eslint-config-htmlacademy": "^4.0.1",
+    "gulp": "4.0.x",
+    "gulp-csso": "^4.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "1.2.x",
+    "gulp-postcss": "^9.0.0",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "2.6.x",
+    "gulp-svgstore": "^7.0.1",
+    "pixel-glass": "^1.0.13",
+    "posthtml-include": "^1.2.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-htmlacademy": "^0.1.5",
+    "stylelint-config-standard": "^22.0.0"
+  },
   "scripts": {
     "editorconfig": "editorconfig-cli",
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
@@ -12,33 +33,11 @@
     "webp": "gulp webp",
     "sprite": "gulp sprite"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Aznaur/Swedish-Bitter.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Aznaur/Swedish-Bitter/issues"
-  },
-  "homepage": "https://github.com/Aznaur/Swedish-Bitter#readme",
-  "devDependencies": {
-    "@htmlacademy/editorconfig-cli": "^1.0.0",
-    "autoprefixer": "^9.6.1",
-    "browser-sync": "^2.26.7",
-    "eslint": "^7.27.0",
-    "eslint-config-htmlacademy": "^4.0.1",
-    "gulp": "^4.0.2",
-    "gulp-csso": "^4.0.1",
-    "gulp-imagemin": "^7.1.0",
-    "gulp-plumber": "^1.2.1",
-    "gulp-postcss": "^8.0.0",
-    "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.1.0",
-    "gulp-sourcemaps": "^2.6.5",
-    "stylelint": "^13.13.1",
-    "stylelint-config-htmlacademy": "^0.1.5"
-  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
   "editorconfig-cli": [
     "*.json",
     "*.js",
@@ -47,7 +46,10 @@
     "source/img/**/*.svg",
     "source/sass/**/*.{sass,scss}"
   ],
+  "engines": {
+    "node": "8.15"
+  },
   "dependencies": {
-    "del": "^5.1.0"
+    "del": "^6.0.0"
   }
 }

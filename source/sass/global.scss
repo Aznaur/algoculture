@@ -1,3 +1,4 @@
+/* stylelint-disable */
 html {
   height: 100%;
 }
@@ -21,7 +22,11 @@ img {
   height: auto;
 }
 
-p, h1, h2, h3, h4 {
+p,
+h1,
+h2,
+h3,
+h4 {
   margin: 0;
 }
 
@@ -41,7 +46,7 @@ ul {
   align-items: center;
   right: 35px;
   cursor: pointer;
-  background-color: #1F242E;
+  background-color: #1f242e;
   width: 40px;
   height: 40px;
   border: none;
@@ -62,7 +67,7 @@ ul {
 }
 
 .active {
-  transform: translate(0px, 0px) !important;
+  transform: translate(0, 0) !important;
   opacity: 1 !important;
 }
 

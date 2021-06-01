@@ -1,26 +1,26 @@
 'use strict';
 
 {
-  let scroll = document.querySelector('.greeting__scroll');
-  let greeting = document.querySelector('.greeting');
-  let about = document.querySelector('.about-company');
-  let btn = document.querySelector('.btnTop');
-  let navOpen = document.querySelector('.main-nav__toggle');
-  let header = document.querySelector('.page-header');
-  let body = document.querySelector('body');
-  let mainNav = document.querySelector('.main-nav__list');
-  let socilaList = document.querySelector('.main-nav__social');
-  let sectionId = document.querySelectorAll('[data-id]');
+  const scroll = document.querySelector('.greeting__scroll');
+  const greeting = document.querySelector('.greeting');
+  const about = document.querySelector('.about-company');
+  const btn = document.querySelector('.btnTop');
+  const navOpen = document.querySelector('.main-nav__toggle');
+  const header = document.querySelector('.page-header');
+  const body = document.querySelector('body');
+  const mainNav = document.querySelector('.main-nav__list');
+  const socilaList = document.querySelector('.main-nav__social');
+  const sectionId = document.querySelectorAll('[data-id]');
 
-  mainNav.addEventListener('click', function (evt) {
+  mainNav.addEventListener('click', (evt) => {
     evt.preventDefault();
     let target = evt.target;
     sectionId[target.id].scrollIntoView({
-      behavior: 'smooth'
+      behavior: 'smooth',
     });
   });
 
-  navOpen.addEventListener('click', function (evt) {
+  navOpen.addEventListener('click', (evt) => {
     evt.preventDefault();
     navOpen.classList.toggle('main-nav__toggle--active');
     socilaList.classList.toggle('main-nav__social--active');
@@ -29,13 +29,13 @@
     body.classList.toggle('body--scroll');
   });
 
-  scroll.addEventListener('click', function () {
+  scroll.addEventListener('click', () => {
     about.scrollIntoView({
-      behavior: 'smooth'
+      behavior: 'smooth',
     });
   });
 
-  window.onscroll = function () {scrollFunction()};
+  window.onscroll = function () {scrollFunction();};
 
   function scrollFunction() {
     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
@@ -47,9 +47,9 @@
     }
   }
 
-  btn.addEventListener('click', function () {
+  btn.addEventListener('click', () => {
     greeting.scrollIntoView({
-      behavior: 'smooth'
+      behavior: 'smooth',
     });
   });
 

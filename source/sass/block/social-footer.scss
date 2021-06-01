@@ -1,8 +1,15 @@
+/* stylelint-disable */
 .social-footer {
   margin-top: 22px;
 }
 
 .social-footer__item {
+  &:first-of-type {
+    & a {
+      margin-right: 15px;
+    }
+  }
+
   & a {
     display: flex;
     justify-content: center;
@@ -20,16 +27,12 @@
 
     &:hover {
       background-color: #ffffff;
+    }
 
-      & svg {
-        & path {
-          fill: #000000;
-        }
+    .social-footer__item:hover svg {
+      & path {
+        fill: #000000;
       }
     }
-  }
-
-  &:first-of-type {
-    margin-right: 15px;
   }
 }
