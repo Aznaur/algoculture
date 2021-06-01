@@ -9,8 +9,14 @@
   const header = document.querySelector('.page-header');
   const body = document.querySelector('body');
   const mainNav = document.querySelector('.main-nav__list');
-  const socilaList = document.querySelector('.main-nav__social');
   const sectionId = document.querySelectorAll('[data-id]');
+
+  function toggleClass (block1, block2, block3, block4) {
+    block1.classList.toggle('main-nav__toggle--active');
+    block2.classList.toggle('main-nav__list--toggle');
+    block3.classList.toggle('page-header--menu');
+    block4.classList.toggle('body--scroll');
+  }
 
   mainNav.addEventListener('click', (evt) => {
     evt.preventDefault();
@@ -18,15 +24,12 @@
     sectionId[target.id].scrollIntoView({
       behavior: 'smooth',
     });
+    toggleClass(navOpen,mainNav,header,body);
   });
 
   navOpen.addEventListener('click', (evt) => {
     evt.preventDefault();
-    navOpen.classList.toggle('main-nav__toggle--active');
-    socilaList.classList.toggle('main-nav__social--active');
-    mainNav.classList.toggle('main-nav__list--toggle');
-    header.classList.toggle('page-header--menu');
-    body.classList.toggle('body--scroll');
+    toggleClass(navOpen,mainNav,header,body);
   });
 
   scroll.addEventListener('click', () => {
