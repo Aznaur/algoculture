@@ -3,13 +3,13 @@ html {
 }
 
 body {
+  position: relative;
   min-width: 320px;
   height: 100%;
   font-size: 16px;
   background-color: #ffffff;
   font-family: "Source Sans", "Arial", sans-serif;
   color: #81868e;
-  overflow-x: hidden;
 }
 
 .body--scroll {

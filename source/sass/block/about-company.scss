@@ -19,7 +19,7 @@
   min-height: 565px;
   display: flex;
   margin-right: 30px;
-  transform: translate(-120%, 0px);
+  transform: translate(0px, 50%);
   opacity: 0;
   transition: all 0.8s ease 0s;
 
@@ -43,10 +43,9 @@
 .about-company__text {
   max-width: 560px;
   color: #81868e;
-  transform: translate(120%, 0px);
+  transform: translate(0px, 50%);
   opacity: 0;
   transition: all 1.5s ease 0s;
-  transition-delay: 0.2s;
 
   & h2 {
     color: #333b46;
